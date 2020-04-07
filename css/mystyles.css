@@ -72,4 +72,15 @@ h1,h2,h3,h4,h5,h6,a{
 /* carousel */
 
 /* carousel ends here */
+
+/* featured movies */
+.featured_movies{
+    margin-top: 20px;
+}
+.featured_card{
+    border: none;
+}
+.top_space{
+    margin-top: 20px;
+}
 /************************************************************************************************/
