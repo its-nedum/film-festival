@@ -7,9 +7,16 @@
 
         <link rel="stylesheet" href="css/bootstrap.min.css" />
         <link rel="stylesheet" href="css/mystyles.css" />
+        <!-- font awesome -->
+        <link href="css/fontawesome.css" rel="stylesheet"/>
+        <link href="css/brands.css" rel="stylesheet"/>
+        <link href="css/solid.css" rel="stylesheet"/>
+
+        <script type="text/javascript" src="jquery/jquery-3.4.1.slim.min.js"></script>
+        
     </head>
 <body>
-
+  
 <!-- Top header -->
 <div class="top_header">
     <div class="container">
@@ -33,7 +40,7 @@
       <div class="col-sm-12 col-md-4 col-lg-4">
         <div class="make_reservation">
             <ul>
-                <li><i class="fa fa-phone" aria-hidden="true"></i> (+234) 708 2632 448</li>
+                <li><i class="fas fa-phone" aria-hidden="true"></i> (+234) 708 2632 448</li>
                 <li><a href="#" class="btn btn-success" data-toggle="modal" data-target="#displayReservation">Reservation</a></li>
             </ul>
         </div>
@@ -285,41 +292,52 @@
 <!-- //tab movies -->
 
 <!-- footer -->
-<div class="card noside_border text-center">
+<div class="card noside_border text-left">
   <div class="card-body">
     <div class="row">
-      <div class="col-sm-4">
-        <div class="card borderless_card">
+      <div class="col-sm-12 col-md-4">
+        <div class="card borderless_card footer_card">
           <div class="card-body">
-            <h5 class="card-title">Get In Touch</h5>
+            <h5 class="card-title">Social Links</h5>
             <div class="card-text">
-              <p>Facebook</p>
+              <p><i class="fab fa-twitter"></i> <a href="https://www.twitter.com" target="_blank">Twitter</a></p>
+              <p><i class="fab fa-instagram"></i> <a href="https://www.instagram.com" target="_blank">Instagram</a></p>
+              <p><i class="fab fa-facebook"></i> <a href="https://www.facebook.com" target="_blank">Facebook</a></p>
+              <p><i class="fab fa-newspaper"></i> <a href="#" target="_blank">City of Boston’s News</a></p>
+              <p><i class="fab fa-archway"></i> <a href="#" target="_blank">Boston Public Garden</a></p>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-sm-4">
-        <div class="card borderless_card">
+      <div class="col-sm-12 col-md-4">
+        <div class="card borderless_card footer_card">
           <div class="card-body">
-            ---
+            <h5 class="card-title">Subscribe to our news letter</h5>
+            <form action="#" method="post" class="form_holder subform">
+              <input type="text" name="subscribe" placeholder="Email Address" required="">
+              <input type="submit" value="Send" class="btn btn-primary">
+            </form>
           </div>
         </div>
       </div>
-      <div class="col-sm-4">
-        <div class="card borderless_card">
+      <div class="col-sm-12 col-md-4">
+        <div class="card borderless_card footer_card">
           <div class="card-body">
-            ---
+            <h5 class="card-title">Get In Touch</h5>
+            <p>Boston Public Garden</p>
+            <p>07082632448</p>
+            <p>watchitoutside@gmail.com</p>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="card-footer text-muted">
+  <div class="card-footer text-muted text-center">
     <p>&copy; 2020 Watch It Outside. All rights reserved | Developed by <a href="https://github.com/its-nedum" target="_blank">Chinedu Emesue</a></p>
   </div>
 </div>
 <!-- //footer -->
-    <script src="jquery/jquery-3.4.1.slim.min.js"></script>
+    
     <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

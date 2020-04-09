@@ -108,5 +108,37 @@ h1,h2,h3,h4,h5,h6,a{
 .noside_border{
     border-left: none;
     border-right: none;
+    background-color: #212121;
+}
+/* footer */
+.footer_card{
+    background-color: #212121;
+    color:#fff;
+}
+.subform {
+    border: 1px solid #fff;
+}
+.subform input[type="text"] {
+    outline: none;
+    display: block;
+    width: 90%;
+    border: 1px solid #d9d9d9;
+    margin: 0 0 20px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size:14px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.subform > input[type="submit"]{
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.social_links{
+    text-decoration: none;
+    color: #fff;
 }
 /************************************************************************************************/
