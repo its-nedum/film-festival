@@ -93,13 +93,16 @@
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Movies</a>
+          <a class="nav-link" href="#about">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Show Time</a>
+          <a class="nav-link" href="#showtimes">Show Time</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">News</a>
+          <a class="nav-link" href="#news">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#" data-toggle="modal" data-target="#displayReservation">Reservation</a>
         </li>
       </ul> 
     </div>
@@ -149,7 +152,7 @@
 </div>
 <!-- //carousel -->
 <!-- about watch it outside -->
-<div class="container top_space">
+<div class="container top_space" id="about">
 <div class="card borderless_card">
   <div class="card-body">
     <h5 class="card-title">Welcome to Watch It Outside</h5>
@@ -169,7 +172,8 @@
 
 <!-- //features movies -->
 <!--  -->
-<div class="container">
+<h4 class="latest-text w3_latest_text">Featured Movies</h4>
+<div class="container" id="showtimes">
   <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
     <li class="nav-item">
       <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">August 5</a>
@@ -199,7 +203,7 @@
           </div>
           <div class="col-sm-6 col-md-4 col-lg-2">
             <div class="card">
-              <img src="images/h5.jpg" class="card-img-top" alt="...">
+              <img src="images/c5.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <p> movie title </p>
                 <p>Show Time:  8th April - 5:00pm</p>
@@ -321,7 +325,7 @@
 </div>
 <!--  -->
 <!-- news and map -->
-<div class="card borderless_card">
+<div class="card borderless_card" id="news">
   <div class="card-body">
     <div class="row">
       <div class="col-sm-12 col-md-7">
