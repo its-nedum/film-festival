@@ -51,7 +51,7 @@ h1,h2,h3,h4,h5,h6,a{
     background: #FF8D1B;
 }
 .navbar-nav > li {
-    border-right: 1px dotted #fff;
+    /* border-right: 1px dotted #fff; */
     text-align: center;  
     float: left;
     /* width: 40%;  */
@@ -110,6 +110,14 @@ h1,h2,h3,h4,h5,h6,a{
     border-right: none;
     background-color: #212121;
 }
+.about_header, .showtimes_header{
+    font-size: 2em;
+    font-weight: 400;
+    border-left: 5px solid #212121;
+    margin-bottom: 1em;
+    padding: 0.3em 0.5em;  
+}
+
 /* footer */
 .footer_card{
     background-color: #212121;
@@ -147,8 +155,8 @@ h1,h2,h3,h4,h5,h6,a{
 }
 
 h4.latest-text {
-    border-left: 5px solid #ff8d1b;
-  font-size: 2em;
+  border-left: 5px solid #212121;
+  font-size: 1.7em;
   color: #212121;
   text-transform: uppercase;
   margin-bottom: 1em;
