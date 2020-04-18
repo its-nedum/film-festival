@@ -75,7 +75,7 @@ h1,h2,h3,h4,h5,h6,a{
     font-size: 2em;
     color: #212121;
 }
-.form_holder input[type="text"],.form_holder input[type="email"] {
+.form_holder input[type="text"],.form_holder input[type="email"], .form_holder > select {
     outline: none;
     display: block;
     width: 100%;
@@ -86,6 +86,17 @@ h1,h2,h3,h4,h5,h6,a{
     font-weight: 400;
     font-size:14px;
   }
+.people_count{
+    outline: none;
+    display: block;
+    width: 100%;
+    border: 1px solid #d9d9d9;
+    margin: 0 0 20px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    font-weight: 400;
+    font-size:14px;  
+}
 /* reservation */
 
 /* carousel */
