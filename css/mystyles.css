@@ -15,7 +15,9 @@ h1,h2,h3,h4,h5,h6,a{
 	margin:0;
 }
 
-/* Header styles */
+/*--------------------------------------------------------------
+# Header styles
+--------------------------------------------------------------*/
 .top_header {
     padding: 1em 0;
 	border-top: 3px solid #212121;
@@ -51,18 +53,14 @@ h1,h2,h3,h4,h5,h6,a{
     background: #FF8D1B;
 }
 .navbar-nav > li {
-    /* border-right: 1px dotted #fff; */
     text-align: center;  
     float: left;
-    /* width: 40%;  */
 }
 .navbar-nav > li > a {
     color: #fff;
     text-transform: uppercase;
 }
-/* .first_link{
-    margin-left: 100px;
-} */
+
 .nav-link{
     height: 50px;    
 }
@@ -99,9 +97,39 @@ h1,h2,h3,h4,h5,h6,a{
 }
 /* reservation */
 
-/* carousel */
-
-/* carousel ends here */
+/* banner */
+.banner_head{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/outdoor_cinema.jpeg) top center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+}
+.banner_container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 90px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 15px;
+}
+.welcome_text{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+}
+.welcome_extra{
+    color: #fff;
+    font-weight: 300;
+}
+/* banner ends here */
 
 /* featured movies */
 .featured_movies{
