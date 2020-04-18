@@ -75,7 +75,7 @@ h1,h2,h3,h4,h5,h6,a{
     font-size: 2em;
     color: #212121;
 }
-.form_holder input[type="text"],.form_holder input[type="email"], .form_holder > select {
+.form_holder input[type="text"],.form_holder input[type="email"], .form_holder input[type="date"] {
     outline: none;
     display: block;
     width: 100%;
