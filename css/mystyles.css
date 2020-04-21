@@ -303,6 +303,16 @@ padding: 0;
     margin-bottom: 10px;
     margin-left: 10px;
 }
+.btn-sub {
+    color: #fff;
+    background-color: #FF8D1B;
+    border: none;
+}
+.btn-sub:hover {
+    color: #FF8D1B;
+    background-color: #fff;
+    border: none;
+}
 .social_links > a{
     text-decoration: none;
     color: #fff;
