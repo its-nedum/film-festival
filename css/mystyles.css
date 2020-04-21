@@ -101,7 +101,7 @@ h1,h2,h3,h4,h5,h6,a{
 # Navigation Bar Styles
 --------------------------------------------------------------*/
 .nav_cover {
-    background: #FF8D1B;
+    color: #fff;
 }
 .navbar-nav > li {
     text-align: center;  
