@@ -39,6 +39,8 @@ h1,h2,h3,h4,h5,h6,a{
     text-align: center;
     padding: 6px 30px;
     font-weight: bold;
+    background: #FF8D1B;
+    border-radius: 5px;
 }
 .make_reservation ul li a:focus{
 	outline:none;
@@ -55,7 +57,27 @@ h1,h2,h3,h4,h5,h6,a{
 	padding-right:1em;
 } 
 
-
+/*--------------------------------------------------------------
+# Logo Styles
+--------------------------------------------------------------*/
+.film_festival_logo a {
+    text-decoration: none;
+}
+.film_festival_logo a h1{
+    color:#FF8D1B;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+.film_festival_logo a span{
+    color:#212121;
+    
+}
+.film_festival_logo .edition{
+    color:#FF8D1B;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    margin-left: 100px;
+}
 /*--------------------------------------------------------------
 # Navigation Bar Styles
 --------------------------------------------------------------*/
