@@ -100,20 +100,14 @@ h1,h2,h3,h4,h5,h6,a{
 /*--------------------------------------------------------------
 # Navigation Bar Styles
 --------------------------------------------------------------*/
-.nav_cover {
-    color: #fff;
-}
-.navbar-nav > li {
-    text-align: center;  
-    float: left;
-}
 .navbar-nav > li > a {
     color: #fff;
     text-transform: uppercase;
-}
-
-.nav-link{
-    height: 50px;    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 1.1em;
 }
 
 
