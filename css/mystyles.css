@@ -79,6 +79,25 @@ h1,h2,h3,h4,h5,h6,a{
     margin-left: 100px;
 }
 /*--------------------------------------------------------------
+# Search Bar Styles
+--------------------------------------------------------------*/
+.film_search .form-control {
+    padding-left: 2.375rem;
+}
+
+.film_search .icon {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+/*--------------------------------------------------------------
 # Navigation Bar Styles
 --------------------------------------------------------------*/
 .nav_cover {
