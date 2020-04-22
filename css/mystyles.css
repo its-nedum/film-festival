@@ -27,7 +27,7 @@ h1,h2,h3,h4,h5,h6,a{
 # Top Header Styles
 --------------------------------------------------------------*/
 .top_header {
-    padding: 1em 0;
+    padding: 1em;
 	border-top: 3px solid #212121;
 }
 
@@ -182,11 +182,13 @@ h1,h2,h3,h4,h5,h6,a{
     font-size: 56px;
     font-weight: 600;
     text-transform: uppercase;
+    margin-bottom: 10px;
+    padding-bottom: 0px;
 }
 .welcome_extra{
     color: #c5c2c2;
-  font-weight: 700;
-  font-size: 20px;
+    font-weight: 700;
+    font-size: 20px;
 }
 
 /*--------------------------------------------------------------
@@ -326,3 +328,24 @@ h4.latest-text {
   margin-left: 3em;
 }
 
+/*--------------------------------------------------------------
+# Media Queries
+--------------------------------------------------------------*/
+@media (max-width: 991px) { 
+    .banner_head .banner_container {
+      top: 70px;
+    }
+  
+    .banner_head h1 {
+      font-size: 34px;
+    }
+  
+    .banner_head p {
+      font-size: 16px;
+    }
+
+    .today_film, .event_venue{
+        margin-top: 10px;
+    }
+
+}
