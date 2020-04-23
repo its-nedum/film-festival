@@ -349,3 +349,29 @@ h4.latest-text {
     }
 
 }
+
+@media (max-width: 991px){
+    .film_festival_logo a h1{
+        font-size: 1.8rem;
+    }
+    .film_festival_logo .edition{
+        text-align: center;
+        margin-left: 50px;
+    }
+    .make_reservation ul li {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 767px){
+    .film_festival_logo a h1{
+        font-size: 2rem;
+    }
+    .film_festival_logo .edition{
+        text-align: center;
+        margin-left: 100px;
+    }
+    .make_reservation ul li {
+        font-size: 1em;
+    }
+}
