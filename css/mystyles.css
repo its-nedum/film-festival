@@ -26,7 +26,7 @@ h1,h2,h3,h4,h5,h6,a{
 /*--------------------------------------------------------------
 # Top Header Styles
 --------------------------------------------------------------*/
-.top_header {
+/* .top_header {
     padding: 1em;
 	border-top: 3px solid #212121;
 }
@@ -55,12 +55,12 @@ h1,h2,h3,h4,h5,h6,a{
 }
 .make_reservation ul li i,.make_reservation ul li:first-child{
 	padding-right:1em;
-} 
+}  */
 
 /*--------------------------------------------------------------
 # Logo Styles
 --------------------------------------------------------------*/
-.film_festival_logo a {
+/* .film_festival_logo a {
     text-decoration: none;
 }
 .film_festival_logo a h1{
@@ -77,7 +77,19 @@ h1,h2,h3,h4,h5,h6,a{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     margin-left: 100px;
+} */
+.logo_text {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    font-size: 35px;
+    
 }
+.logo_text .edition {
+    color:#fff;
+    font-size: 14px;
+    border-bottom: #f3f1f1 solid 2px;
+}
+
 /*--------------------------------------------------------------
 # Search Bar Styles
 --------------------------------------------------------------*/
@@ -110,7 +122,10 @@ h1,h2,h3,h4,h5,h6,a{
     font-size: 1.1em;
 }
 
-
+.navbar {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
 /*--------------------------------------------------------------
 # Reservation Form Styles
 --------------------------------------------------------------*/
