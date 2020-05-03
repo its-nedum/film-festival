@@ -1,5 +1,5 @@
 /*
-  Project 3: Watch it outside Boston Edition
+  Project 3: Watch It Outside Boston Edition
   Created By: Chinedu Emesue
 */
 
@@ -24,60 +24,8 @@ h1,h2,h3,h4,h5,h6,a{
 }
 
 /*--------------------------------------------------------------
-# Top Header Styles
---------------------------------------------------------------*/
-/* .top_header {
-    padding: 1em;
-	border-top: 3px solid #212121;
-}
-
-.make_reservation ul li a{
-	color: #fff;
-    display: inline-block;
-    text-transform: uppercase;
-    text-decoration: none;
-    text-align: center;
-    padding: 6px 30px;
-    font-weight: bold;
-    background: #FF8D1B;
-    border-radius: 5px;
-}
-.make_reservation ul li a:focus{
-	outline:none;
-}
-.make_reservation ul li a:hover{
-	background:#212121;
-}
-.make_reservation ul li{
-	display:inline-block;
-	color:#212121;
-	font-size:1em;
-}
-.make_reservation ul li i,.make_reservation ul li:first-child{
-	padding-right:1em;
-}  */
-
-/*--------------------------------------------------------------
 # Logo Styles
 --------------------------------------------------------------*/
-/* .film_festival_logo a {
-    text-decoration: none;
-}
-.film_festival_logo a h1{
-    color:#FF8D1B;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
-}
-.film_festival_logo a span{
-    color:#212121;
-    
-}
-.film_festival_logo .edition{
-    color:#FF8D1B;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    text-align: center;
-    margin-left: 100px;
-} */
 .logo_text {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 400;
@@ -89,25 +37,6 @@ h1,h2,h3,h4,h5,h6,a{
     font-size: 14px;
     border-bottom: #f3f1f1 solid 2px;
 }
-
-/*--------------------------------------------------------------
-# Search Bar Styles
---------------------------------------------------------------*/
-/* .film_search .form-control {
-    padding-left: 2.375rem;
-}
-
-.film_search .icon {
-    position: absolute;
-    z-index: 2;
-    display: block;
-    width: 2.375rem;
-    height: 2.375rem;
-    line-height: 2.375rem;
-    text-align: center;
-    pointer-events: none;
-    color: #aaa;
-} */
 
 /*--------------------------------------------------------------
 # Navigation Bar Styles
@@ -126,6 +55,7 @@ h1,h2,h3,h4,h5,h6,a{
     padding-top: 0px !important;
     padding-bottom: 0px !important;
 }
+
 /*--------------------------------------------------------------
 # Reservation Form Styles
 --------------------------------------------------------------*/
@@ -134,7 +64,7 @@ h1,h2,h3,h4,h5,h6,a{
     font-size: 2em;
     color: #212121;
 }
-.form_holder input[type="text"],.form_holder input[type="email"], .form_holder input[type="date"] {
+.form_holder input[type="text"],.form_holder input[type="email"], .form_holder input[type="date"], .people_count {
     outline: none;
     display: block;
     width: 100%;
@@ -145,18 +75,6 @@ h1,h2,h3,h4,h5,h6,a{
     font-weight: 400;
     font-size:14px;
   }
-.people_count{
-    outline: none;
-    display: block;
-    width: 100%;
-    border: 1px solid #d9d9d9;
-    margin: 0 0 20px;
-    padding: 10px 15px;
-    box-sizing: border-box;
-    font-weight: 400;
-    font-size:14px;  
-}
-
 
 /*--------------------------------------------------------------
 # Banner Styles
@@ -210,15 +128,19 @@ h1,h2,h3,h4,h5,h6,a{
 # About Section Styles
 --------------------------------------------------------------*/
 .about_info > span{
-font-weight: 400;
-margin: 0 0 20px 0;
-padding: 0;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    padding: 0;
 }
 .about-text {
     font-size: 1em;
 }
+.about-text a {
+    color:#ff8d1b;
+}
+
 /*--------------------------------------------------------------
-# Fetaured Movies Styles
+# Featured Movies Styles
 --------------------------------------------------------------*/
 .featured_movies{
     margin-top: 20px;
@@ -259,6 +181,9 @@ padding: 0;
     margin-left: 5px;
     margin-top: 5px;
 }
+.card {
+    border: none;
+}
 /*--------------------------------------------------------------
 # News Carousel Styles
 --------------------------------------------------------------*/
@@ -274,11 +199,18 @@ padding: 0;
     color: #fff;
     top: 50%;
   }
-.news_bg{
+.carousel{
     background: url(../images/news_bg.jpg);
 }
-
-
+.carousel::before {
+    content: "";
+    background: rgba(3, 8, 26, 0.8);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
 
 /*--------------------------------------------------------------
 # Google Map Styles
@@ -369,32 +301,6 @@ h4.latest-text {
 
 }
 
-@media (max-width: 991px){
-    .film_festival_logo a h1{
-        font-size: 1.8rem;
-    }
-    .film_festival_logo .edition{
-        text-align: center;
-        margin-left: 50px;
-    }
-    .make_reservation ul li {
-        font-size: 0.8em;
-    }
-}
-
-@media (max-width: 767px){
-    .film_festival_logo a h1{
-        font-size: 2rem;
-    }
-    .film_festival_logo .edition{
-        text-align: center;
-        margin-left: 100px;
-    }
-    .make_reservation ul li {
-        font-size: 1em;
-    }
-}
-
 @media (max-width: 465px){
     .logo_text {
         font-weight: 400;
@@ -403,16 +309,9 @@ h4.latest-text {
     }
     .logo_text .edition {
         font-size: 10px;
-        border-bottom: #f3f1f1 solid 2px;
     }
     .navbar {
         padding-top: 0.5rem !important;
         padding-bottom: 0.5rem !important;
     }
-}
-
-@media (max-width: 2560){
-    /* .news_bg{
-        background: url(../images/news_bg.jpg) !important;
-    } */
 }
