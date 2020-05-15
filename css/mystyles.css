@@ -56,6 +56,13 @@ h1,h2,h3,h4,h5,h6,a{
     padding-bottom: 0px !important;
 }
 
+.nav-colr {
+    color: #fff !important;    
+}
+.active .nav-link{
+    color: black !important;
+}
+
 /*--------------------------------------------------------------
 # Reservation Form Styles
 --------------------------------------------------------------*/
@@ -133,9 +140,11 @@ form input[type="date"] {
     font-weight: 400;
     margin: 0 0 20px 0;
     padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .about-text {
     font-size: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .about-text a {
     color:#ff8d1b;
