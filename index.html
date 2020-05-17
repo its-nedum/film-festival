@@ -291,24 +291,24 @@
                 <div class="row">
                   <div class="col-sm-12 col-md-6">
                   <div class="input-group mb-3">
-                      <input type="text" class="form-control" placeholder="First Name" required="">
+                      <input type="text" id="firstname" class="form-control" placeholder="First Name" required="">
                     </div>
                   </div>
                   <div class="col-sm-12 col-md-6">
                   <div class="input-group mb-3">
-                      <input type="text" class="form-control" placeholder="Last Name" required="">
+                      <input type="text" id="lastname" class="form-control" placeholder="Last Name" required="">
                     </div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="col-sm-12 col-md-6">
                     <div class="input-group mb-3">
-                      <input type="email" class="form-control" placeholder="E-mail" required="">
+                      <input type="email" id="email" class="form-control" placeholder="E-mail" required="">
                     </div>
                   </div>
                   <div class="col-sm-12 col-md-6">
                     <div class="input-group mb-3">
-                      <input type="text" class="form-control" placeholder="Phone Number" required="">
+                      <input type="text" id="telephone" class="form-control" placeholder="Phone Number" required="">
                     </div>
                   </div>
                 </div>
@@ -323,7 +323,7 @@
                   </div>
                   <div class="col-sm-12 col-md-6">
                     <div class="input-group mb-3">
-                      <select class="custom-select">
+                      <select class="custom-select" id="counter">
                         <option selected>How many people are you coming with? (including yourself)</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -335,7 +335,7 @@
                  </div>
               </div>
               <div class="row">
-                <button class="btn btn-primary">Submit</button>
+                <button class="btn btn-primary" onclick="reg_validate()">Submit</button>
               </div>
                 </form>
               </div>
@@ -422,8 +422,8 @@
           <div class="card-body">
             <h5 class="card-title">Subscribe To Our News Letter</h5>
             <form class="form_holder subform">
-              <input type="text" name="subscribe" placeholder="Email Address" required="">
-              <input type="submit" value="Send" class="btn btn-sub">
+              <input type="text" id="subscribe" name="subscribe" placeholder="Email Address" required="">
+              <input type="submit" value="Send" onclick="sub_validate()" class="btn btn-sub">
             </form>
           </div>
         </div>
@@ -450,5 +450,34 @@
 <!-- //footer -->
     <!-- Bootstrap Js file -->
     <!-- <script src="js/bootstrap.min.js"></script> -->
+<script>
+  const reg_validate = () => {
+   
+    let firstname = document.getElementById("firstname").value;
+    let lastname = document.getElementById("lastname").value;
+    let email = document.getElementById("email").value;
+    let telephone= document.getElementById("telephone").value;
+    let datepicker= document.getElementById("dates").value;
+    let counter = document.getElementById("counter").value;
+    const verified = /\S+@\S+\.\S+/.test(email);
+    
+    if(firstname !== "" && lastname !== "" && verified && telephone !== "" && 
+        datepicker !== "" && counter !== "How many people are you coming with? (including yourself)"){ 
+      alert('Registration Accepted');
+    }else{
+      alert("All fields are required...please try again")
+    }
+  }
+
+  const sub_validate = () => {
+    let subscribe = document.getElementById("subscribe").value;
+    const verified = /\S+@\S+\.\S+/.test(subscribe);
+    if(verified){
+      alert("You've been added to our mailing list");
+    }else{
+      alert("Please provide a valid email address")
+    }
+  }
+</script>
 </body>
 </html>
