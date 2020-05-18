@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Watch It Outside Boston edition</title>
+        <title>Watch It Outside - Boston Edition</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta content="Boston film festival, watch it outside" name="keywords">
@@ -10,15 +10,14 @@
          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
          <!-- My custom CSS file -->
          <link rel="stylesheet" href="css/mystyles.css" />
-         <!-- font awesome -->
+         <!-- Font Awesome -->
          <link rel="stylesheet" href="https://use.fontawesome.com/55076b8940.css"/>
          <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/brands.min.css" rel="stylesheet"/>
          <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/solid.min.css" rel="stylesheet"/>
-         <!-- Jquery -->
+         <!-- Bootstrap Jquery -->
          <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
          <!-- Bootstrap JS-->
          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-        
     </head>
 <body>
 
@@ -335,7 +334,7 @@
                  </div>
               </div>
               <div class="row">
-                <button class="btn btn-primary" onclick="reg_validate()">Submit</button>
+                <button class="btn btn-primary" type="button" onclick="reg_validate()">Submit</button>
               </div>
                 </form>
               </div>
@@ -423,7 +422,7 @@
             <h5 class="card-title">Subscribe To Our News Letter</h5>
             <form class="form_holder subform">
               <input type="text" id="subscribe" name="subscribe" placeholder="Email Address" required="">
-              <input type="submit" value="Send" onclick="sub_validate()" class="btn btn-sub">
+              <button type="button" onclick="sub_validate()" class="btn btn-sub">Send</button>  
             </form>
           </div>
         </div>
@@ -448,11 +447,13 @@
   </div>
 </div>
 <!-- //footer -->
-    <!-- Bootstrap Js file -->
-    <!-- <script src="js/bootstrap.min.js"></script> -->
+    
 <script>
+  /*
+  * A dummy Javascript form validatiom
+  */
+ //Pre-registration form
   const reg_validate = () => {
-   
     let firstname = document.getElementById("firstname").value;
     let lastname = document.getElementById("lastname").value;
     let email = document.getElementById("email").value;
@@ -464,20 +465,26 @@
     if(firstname !== "" && lastname !== "" && verified && telephone !== "" && 
         datepicker !== "" && counter !== "How many people are you coming with? (including yourself)"){ 
       alert('Registration Accepted');
+      window.location.reload()
     }else{
       alert("All fields are required...please try again")
     }
+    return false;
   }
 
+  //Subscription to news letter
   const sub_validate = () => {
     let subscribe = document.getElementById("subscribe").value;
     const verified = /\S+@\S+\.\S+/.test(subscribe);
     if(verified){
       alert("You've been added to our mailing list");
+      window.location.reload()
     }else{
       alert("Provide a valid email and try again")
     }
+    return false;
   }
+
 </script>
 </body>
 </html>
